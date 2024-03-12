@@ -19,3 +19,6 @@ C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\obj\Debug\net6.0-windows\refint\WP
 C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\obj\Debug\net6.0-windows\WPFUI.pdb
 C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\obj\Debug\net6.0-windows\WPFUI.genruntimeconfig.cache
 C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\obj\Debug\net6.0-windows\ref\WPFUI.dll
+C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\bin\Debug\net6.0-windows\Engine.dll
+C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\bin\Debug\net6.0-windows\Engine.pdb
+C:\Users\Fries\source\repos\c-RPG\WPFUI\WPFUI\obj\Debug\net6.0-windows\WPFUI.csproj.CopyComplete
