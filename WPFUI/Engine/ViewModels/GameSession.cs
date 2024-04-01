@@ -10,6 +10,7 @@ namespace Engine.ViewModels
     public class GameSession
     {
         public Player CurrentPlayer { get; set; }
+        public Location CurrentLocation { get; set; }
 
         public GameSession() {
 
@@ -20,7 +21,17 @@ namespace Engine.ViewModels
             CurrentPlayer.Hit_points = 25;
             CurrentPlayer.Exp = 0;
             CurrentPlayer.Lvl = 1;
-            
+
+            CurrentLocation = new Location();
+            CurrentLocation.Name = "Home";
+            CurrentLocation.XCoordinate = 0;
+            CurrentLocation.YCoordinate = -1;
+            CurrentLocation.Description = "This is the Spawn";
+            //CurrentLocation.ImageName = "/Engine;component/Models/Images/Locations/Home.png";
+            CurrentLocation.ImageName = "C:\\Users\\Fries\\source\\repos\\c-RPG\\WPFUI\\Engine\\Models\\Images\\Locations\\Home.png";
+
+
+
         }
     }
 }
