@@ -7,11 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Models\Images\Locations\Bubble_Jail.png" />
+    <None Remove="Models\Images\Locations\Bubble_Office.png" />
+    <None Remove="Models\Images\Locations\Bubble_Park.png" />
+    <None Remove="Models\Images\Locations\Bubble_Town.png" />
     <None Remove="Models\Images\Locations\Home.png" />
+    <None Remove="Models\Images\Locations\Rock_Bottom.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Models\Images\Locations\Bubble_Jail.png" />
+    <Resource Include="Models\Images\Locations\Bubble_Office.png" />
+    <Resource Include="Models\Images\Locations\Bubble_Park.png" />
+    <Resource Include="Models\Images\Locations\Bubble_Town.png" />
     <Resource Include="Models\Images\Locations\Home.png" />
+    <Resource Include="Models\Images\Locations\Rock_Bottom.png" />
   </ItemGroup>
 
 </Project>
