@@ -7,21 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Models\Images\Locations\Bikini_Bottom.png" />
     <None Remove="Models\Images\Locations\Bubble_Jail.png" />
     <None Remove="Models\Images\Locations\Bubble_Office.png" />
     <None Remove="Models\Images\Locations\Bubble_Park.png" />
     <None Remove="Models\Images\Locations\Bubble_Town.png" />
+    <None Remove="Models\Images\Locations\Chum_Bucket.png" />
     <None Remove="Models\Images\Locations\Home.png" />
+    <None Remove="Models\Images\Locations\Pineapple_House.png" />
     <None Remove="Models\Images\Locations\Rock_Bottom.png" />
+    <None Remove="Models\Images\Locations\Weenie_Hut_Jr.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Models\Images\Locations\Bikini_Bottom.png" />
     <Resource Include="Models\Images\Locations\Bubble_Jail.png" />
     <Resource Include="Models\Images\Locations\Bubble_Office.png" />
     <Resource Include="Models\Images\Locations\Bubble_Park.png" />
     <Resource Include="Models\Images\Locations\Bubble_Town.png" />
+    <Resource Include="Models\Images\Locations\Chum_Bucket.png" />
     <Resource Include="Models\Images\Locations\Home.png" />
+    <Resource Include="Models\Images\Locations\Pineapple_House.png" />
     <Resource Include="Models\Images\Locations\Rock_Bottom.png" />
+    <Resource Include="Models\Images\Locations\Weenie_Hut_Jr.png" />
   </ItemGroup>
 
 </Project>
