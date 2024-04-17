@@ -9,7 +9,7 @@ using System.ComponentModel;
 
 namespace Engine.ViewModels
 {
-    public class GameSession : INotifyPropertyChanged
+    public class GameSession : BaseNotificationClass
     {
         private Location _currentLocation;
         public World CurrentWorld { get; set; }
@@ -18,13 +18,13 @@ namespace Engine.ViewModels
             get { return _currentLocation; }
             set {
                 _currentLocation = value;
-                OnPropertyChanged("CurrentLocation");
+                OnPropertyChanged(nameof(CurrentLocation));
 
                 // Können des hier rein klatschen weil die Location Property sich changed wenn die CurrentLocation sich changed ( no setter needed for isNorth und co. 
-                OnPropertyChanged("isNorth");
-                OnPropertyChanged("isWest");
-                OnPropertyChanged("isEast");
-                OnPropertyChanged("isSouth");
+                OnPropertyChanged(nameof(isNorth));
+                OnPropertyChanged(nameof(isWest));
+                OnPropertyChanged(nameof(isEast));
+                OnPropertyChanged(nameof(isSouth));
 
             }
         }
@@ -91,10 +91,6 @@ namespace Engine.ViewModels
 
 
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+
 }
 }

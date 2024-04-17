@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace Engine.Models{
-    public class Player : INotifyPropertyChanged {
+    public class Player : BaseNotificationClass {
 
         
         private string _name;
@@ -17,14 +17,13 @@ namespace Engine.Models{
         private int _lvl;
         private int _gold;
 
-        // Man kann jetzt Quasi direkt sehen dass sich die Exp Beispielsweise geändert hat im UI direkt. 
         public string Name
         {
             get { return _name; }
             set
             {
                 _name = value;
-                OnPropertyChanged("Name");
+                OnPropertyChanged(nameof(Name));
             }
         }
 
@@ -34,7 +33,7 @@ namespace Engine.Models{
             set
             {
                 _class = value;
-                OnPropertyChanged("Class");
+                OnPropertyChanged(nameof(Class_));
             }
         }
 
@@ -44,7 +43,7 @@ namespace Engine.Models{
             set
             {
                 _hit_points = value;
-                OnPropertyChanged("Hit_points");
+                OnPropertyChanged(nameof(Hit_points));
             }
         }
 
@@ -54,7 +53,7 @@ namespace Engine.Models{
             set
             {
                 _exp = value;
-                OnPropertyChanged("Exp");
+                OnPropertyChanged(nameof(Exp));
             }
         }
         public int Lvl
@@ -63,7 +62,7 @@ namespace Engine.Models{
             set
             {
                 _lvl = value;
-                OnPropertyChanged("Lvl");
+                OnPropertyChanged(nameof(Lvl));
             }
         }
 
@@ -73,17 +72,8 @@ namespace Engine.Models{
             set
             {
                 _gold = value;
-                OnPropertyChanged("Gold");
+                OnPropertyChanged(nameof(Gold));
             }
-        }
-
-        // If some1 listening to PropertyChanged Event Handler we need to send a Msg that this porperty has changed 
-        // Quasi UI abboniert da und sieht wenn sich was ändert.
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }
